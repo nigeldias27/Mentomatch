@@ -5,7 +5,8 @@ import Landing from './pages/landingpage';
 function App() {
   return (
     <div className="App">
-<Dashboard/>    </div>
+      <Dashboard/> 
+    </div>
   );
 }
 
