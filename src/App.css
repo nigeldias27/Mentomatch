@@ -69,3 +69,100 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.signin-box {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 34%;
+  top: 20%;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background: black;
+}
+
+.signin-text {
+  color: white;
+  margin: 50px 0px 30px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#signin-email {
+  width: 300px;
+}
+
+#signin-password {
+  width: 300px;
+}
+
+#signin-next-button {
+  width: 300px;
+}
+
+.no-account-text {
+  color: white;
+}
+
+.no-account-text > a {
+  text-decoration: none;
+}
+
+.mentee-signup-box {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  left: 34%;
+  top: 10%;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  background: black;
+}
+
+.signup-text {
+  color: white;
+  margin: 25px 0px 30px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.create-account-text {
+  color: gray;
+  font-size: 18px;
+  font-weight: 900px;
+  margin: 0px 0px 25px 0px;
+}
+
+#signup-name{
+  width: 300px;
+  margin: -10px 0px 0px 0px;
+}
+
+#signup-email{
+  width: 300px;
+  margin: -10px 0px 0px 0px;
+}
+
+#signup-dob{
+  width: 300px;
+  margin: -10px 0px 0px 0px;
+}
+
+#signup-password {
+  width: 300px;
+  margin: 20px 0px 0px 0px;
+}
+
+.already-account {
+  font-size: 16;
+  font-weight: 600px;
+  color: white;
+}
+
+.already-account > a {
+  text-decoration: none;
+}
