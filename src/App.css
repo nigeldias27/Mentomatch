@@ -70,7 +70,7 @@
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
+
 
 .resourcesbuttons{
   display: flex;
@@ -78,7 +78,7 @@
   align-items: center;
 }
 
-=======
+
 .signin-box {
   display: flex;
   position: absolute;
@@ -123,7 +123,7 @@
   display: flex;
   position: absolute;
   width: 400px;
-  height: 500px;
+
   left: 34%;
   top: 10%;
   align-items: center;
@@ -175,4 +175,4 @@
 .already-account > a {
   text-decoration: none;
 }
->>>>>>> 74289afa6766938a6e7f3b0ade92e0a71979c684
+
