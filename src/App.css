@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -40,7 +38,7 @@
 
 
 @media (max-width:720px) {
-  .navbar-nav{
+  .customnavbar-nav{
     position: absolute;
     top:-50vh;
     display: flex;
@@ -48,24 +46,34 @@
    }  
 }
 @media (min-width:720px) {
-.dir{
+.customdir{
   display: flex;
   flex-direction: row;
 }
-.navbar-toggler{
+.customnavbar-toggler{
   position: absolute;
   margin-top: -50vh;
 }
 }
-.nav-item{
+.customnav-item{
  margin-left: 20px;
  margin-right: 20px; 
  display: flex;
  align-items: center;
+
 }
 
-.nav_container{
+.customnav_container{
   display: flex;
   flex-direction: row;
+  width: 100vw;
   justify-content: space-between;
 }
+
+
+.resourcesbuttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
