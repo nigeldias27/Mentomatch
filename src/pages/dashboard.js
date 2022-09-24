@@ -1,10 +1,14 @@
 import React,{useState, useEffect} from "react"
 import Nav from "react-bootstrap/Nav"
 import NavbarDashboard from "../components/navbardashboard";
-import { FaVideo, FaImages, FaRegStickyNote } from "react-icons/fa";
+import TaskTodo from "../components/taskTodo";
+import TaskAssigned from "../components/taskAssigned";
+import TaskCompleted from "../components/taskCompleted";
+import { FaVideo, FaImages, FaRegStickyNote, FaPlus } from "react-icons/fa";
 import background from "../images/background.png";
 import { BsFillCaretDownFill,BsFillCaretUpFill } from "react-icons/bs";
 import { MdOutlineAddCircle, MdSend } from "react-icons/md";
+
 function Dashboard(){
     const [images,setImages]=useState(true);
     const [features,setFeatures]=useState(true);
@@ -100,7 +104,41 @@ function appear(x){
 
 
                 </div>
-                <div style={{width:'25vw',height:'100vh'}}></div>
+                <div class="task-div" style={{width:'25vw',height:'90vh'}}>
+                    <div class="tasks-todo" style={{width:'25vw',height:'30vh'}}>
+                        <div class="label-tasks-heading">
+                            <div>TODO</div>
+                            <div class="add-todo-task-button"><FaPlus /></div>
+                        </div>
+                        <div class="todo-list">
+                            <TaskTodo/>
+                            <TaskTodo/>
+                            <TaskTodo/>
+                            <TaskTodo/>
+                            <TaskTodo/>
+                        </div>
+                    </div>
+                    <div class="tasks-assigned" style={{width:'25vw',height:'30vh'}}>
+                        <div class="label-tasks-heading"><h6>Assigned</h6></div>
+                        <div class="assigned-list">
+                            <TaskAssigned />
+                            <TaskAssigned />
+                            <TaskAssigned />
+                            <TaskAssigned />
+                            <TaskAssigned />
+                        </div>
+                    </div>
+                    <div class="tasks-completed" style={{width:'25vw',height:'30vh'}}>
+                        <div class="label-tasks-heading"><h6>Completed!</h6></div>
+                        <div class="completed-list">
+                            <TaskCompleted />
+                            <TaskCompleted />
+                            <TaskCompleted />
+                            <TaskCompleted />
+                            <TaskCompleted />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

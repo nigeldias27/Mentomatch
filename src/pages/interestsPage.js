@@ -1,4 +1,4 @@
-function interests(){
+function Interests(){
     return(
         <div class="interests-box">
             <div class="choose-interests-text">Choose Your Interests</div>
@@ -15,4 +15,4 @@ function interests(){
     )
 }
 
-export default interests
+export default Interests
