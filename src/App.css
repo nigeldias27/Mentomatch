@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+@media (max-width:720px) {
+  .navbar-nav{
+    position: absolute;
+    top:-50vh;
+    display: flex;
+    flex-direction: column;
+   }  
+}
+@media (min-width:720px) {
+.dir{
+  display: flex;
+  flex-direction: row;
+}
+.navbar-toggler{
+  position: absolute;
+  margin-top: -50vh;
+}
+}
+.nav-item{
+ margin-left: 20px;
+ margin-right: 20px; 
+ display: flex;
+ align-items: center;
+}
+
+.nav_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
