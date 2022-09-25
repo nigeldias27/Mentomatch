@@ -6,6 +6,7 @@ import Landing from './pages/landingpage';
 import { Routes, Route } from "react-router-dom";
 import SignIn from './pages/signinPage';
 import MenteeSignUp from './pages/signup';
+import HomePage from './screens/Homepage';
 import ProfilePage from './pages/profilePage';
 import Match from './pages/match';
 function App() {

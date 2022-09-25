@@ -12,20 +12,18 @@ function clicked(){
     }
 }
 return(<div>
-<Nav className="navbar navbar-light navbar-expand-md-py-3">
-<div className="customnav_container">
-    <a className="navbar-brand d-flex align-items-center">
-        <h1 className="customnav-item">Mentomatch</h1></a>
-        <div className={"customnavbar-nav ms-auto customdir"}>
-            <div className="customnav-item"><a className="nav-link" style={{color:'black'}}>Home</a></div>
-            <div className="customnav-item"><a className="nav-link" style={{color:'black'}}>Stay</a></div>
-            <div className="customnav-item"><a className="nav-link" style={{color:'black'}}>Conferences &amp; Business</a></div>
-            <div className="customnav-item"><a className="nav-link" style={{color:'black'}}>Dining</a></div>
-            <div className="customnav-item"><a className="nav-link" style={{color:'black'}}>Contact Us</a></div>
+
+        <div class="navbar-elements">
+            <div class="nav-left">
+                <div class="nav-home"><a>home</a></div>
+                <div class="nav-about"><a>about</a></div>
+                <div class="nav-contact"><a>contact</a></div>
+            </div>
+            <div class="nav-right">
+                <div class="login-button"><button>login</button></div>
+            </div>
         </div>
 
-</div>
-</Nav>
-</div>)   
-}
+</div>   
+)}
 export default Navbar
