@@ -6,6 +6,7 @@ import TaskAssigned from "../components/taskAssigned";
 import TaskCompleted from "../components/taskCompleted";
 import { FaVideo, FaImages, FaRegStickyNote, FaPlus } from "react-icons/fa";
 import background from "../images/background.png";
+import {Link} from "react-router-dom";
 import { BsFillCaretDownFill,BsFillCaretUpFill } from "react-icons/bs";
 import { MdOutlineAddCircle, MdSend } from "react-icons/md";
 
@@ -94,6 +95,10 @@ function appear(x){
                     <li class="nav-item">
                         <a class="nav-link" href="#">Group 3</a>
                     </li>
+                    <li class="nav-item">
+                        <Link to="/match"><FaPlus /></Link>
+                    </li>
+                    
                 </ul>
                 <div style={{overflowY:'scroll',height:'90vh'}}></div>
                         <div style={{position:'absolute',bottom:'0px',left:'30vw'}}>

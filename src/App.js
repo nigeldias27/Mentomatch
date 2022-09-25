@@ -7,11 +7,17 @@ import { Routes, Route } from "react-router-dom";
 import SignIn from './pages/signinPage';
 import MenteeSignUp from './pages/signup';
 import HomePage from './screens/Homepage';
-import ProfilePage from "./pages/profilePage"
-
+import ProfilePage from './pages/profilePage';
+import Match from './pages/match';
 function App() {
   return (
-    <Landing />
+    <Routes>
+        <Route path="/" element={<MenteeSignUp/>} />
+        <Route path="/match" element={<Match/>} />
+        <Route exact path="/interests/:name/:dob/:pass/:email" element={<Interests />} />
+        <Route exact path='/dashboard' element={<Dashboard/>}/>
+        <Route exact path='/profile' element={<ProfilePage/>}/>
+        </Routes>
   );
 }
 

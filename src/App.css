@@ -432,6 +432,7 @@ body {
 .assigned-task {
   display: flex;
   flex-direction: row;
+  
   align-items: center;
   width: 290px;
   height: 55px;
@@ -610,4 +611,24 @@ body {
   margin: 15px 0px 0px 20px;
   border-radius: 10px;
   background: white;
+
 }
+
+
+
+.outermatch{
+  height: 90vh;
+  width: 100vh;
+}
+
+.innermatch{
+  position: relative;
+  top: 10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 8px 8px 10px #888888;
+}
+

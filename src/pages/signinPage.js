@@ -42,7 +42,7 @@ function SignIn(){
         
             <button type="button" onClick={()=>{clicked()}} class="btn btn-outline-secondary" >Log In</button>
 
-            <div class="no-account-text">Don't have an account? <a href="/">Sign Up</a></div>
+            
         </div>
     )
 }
