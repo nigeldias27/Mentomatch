@@ -2,7 +2,6 @@ import {db} from '../firebase.js';
 import { getDatabase, ref, child, get } from "firebase/database";
 import {useNavigate} from "react-router-dom";
 
-
 function SignIn(){
     var navigate = useNavigate();
 
@@ -27,7 +26,7 @@ function SignIn(){
         });
     }
     return (
-        <div class="signin-box">
+        <div class="signin-box" >
             <div class="signin-text">SIGN IN</div>
 
             <div class="input-group mb-3" id="signin-email">

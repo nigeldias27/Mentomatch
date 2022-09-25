@@ -12,7 +12,7 @@ function NavbarDashboard(){
     <a className="navbar-brand d-flex align-items-center">
         <h1 className="customnav-item">Mentomatch</h1></a>
         <div className={"customnavbar-nav ms-auto customdir"}>
-            <div className="customnav-item"><a className="nav-link"><img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" style={{borderRadius:'50%',width:'50px',height:'50px'}}></img></a></div>
+            <div className="customnav-item"><Link to={'/profile/'+JSON.parse(localStorage.getItem('userinfo'))[1]['name']}><a className="nav-link"><img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" style={{borderRadius:'50%',width:'50px',height:'50px'}}></img></a></Link></div>
             <div className="customnav-item"><AiFillSetting size={30}/></div>
         </div>
 

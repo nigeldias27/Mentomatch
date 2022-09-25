@@ -1,7 +1,11 @@
 import Navbar from "../components/Navbar.js";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
+import {useNavigate} from "react-router-dom";
 function Landing(){
+    let navigate = useNavigate()
+    function go(){
+        navigate('/signup');
+    }
     return(
         <div class="landing-page">
         <Navbar />
@@ -11,13 +15,17 @@ function Landing(){
                 <div class="mentomatch-tagline-text">Meet like minded people to push on your journey to become better</div></div>
             </div>
             <div class="landing-slide-bottom">
-                <div class="mentee-card"><button>
+                <div class="mentee-card"><button onClick={()=>{
+                    go()
+                }}>
                     <div class="mentee-card-big-text">MENTEE</div>
                     <div class="mentee-card-small-text">receive guidance from expert mentors</div>
                 </button>
                 </div>
                 <div class="signup-text">SIGN UP</div>
-                <div class="mentor-card"><button>
+                <div class="mentor-card"><button onClick={()=>{
+                    go()
+                }}>
                     <div class="mentor-card-big-text">MENTOR</div>
                     <div class="mentor-card-small-text">provide guidance to average mentees</div>
                 </button>
@@ -35,7 +43,6 @@ function Landing(){
             <div class="uses">
             <div class="uses-for-mentee">
                 <div class="uses-mentee-left">
-                    <div class="uses-for-mentee-text">For a Mentee</div>
                     <div class="uses-for-mentee-text-label">
                         <div>M</div>
                         <div>E</div>
@@ -119,8 +126,14 @@ function Landing(){
                     </div>
                 </div>
                 <div class="uses-mentee-left">
-                    <div class="uses-for-mentee-text">For a Mentee</div>
-                    <div class="uses-for-mentee-image"></div>
+                    <div class="uses-for-mentee-text-label">
+                        <div>M</div>
+                        <div>E</div>
+                        <div>N</div>
+                        <div>T</div>
+                        <div>O</div>
+                        <div>R</div>
+                    </div>
                 </div>
             </div>
             </div>

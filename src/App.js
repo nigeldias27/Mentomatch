@@ -12,11 +12,14 @@ import Match from './pages/match';
 function App() {
   return (
     <Routes>
-        <Route path="/" element={<MenteeSignUp/>} />
+        <Route path="/" element={<Landing/>} />
+
+        <Route path="/signin" element={<SignIn/>} />
+        <Route path="/signup" element={<MenteeSignUp/>} />
         <Route path="/match" element={<Match/>} />
         <Route exact path="/interests/:name/:dob/:pass/:email" element={<Interests />} />
         <Route exact path='/dashboard' element={<Dashboard/>}/>
-        <Route exact path='/profile' element={<ProfilePage/>}/>
+        <Route exact path='/profile/:name' element={<ProfilePage/>}/>
         </Routes>
   );
 }

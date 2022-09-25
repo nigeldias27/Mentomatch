@@ -19,7 +19,7 @@ function Dashboard(){
     const [articleslist,setarticleslist]=useState([]);
     
 useEffect(()=>{
-    setImageslist(['Calculus sheet','Calculus sheet','Calculus sheet']);
+    setImageslist(['Animal Kingdom','Plant Kingdom','Microorganisms']);
 })
 
 function appear(x){
@@ -85,15 +85,17 @@ function appear(x){
                         })}
                 </div>
                 <div style={{width:'75vw',height:'100vh'}}>
+                        
+
                 <ul class="nav nav-pills" style={{display:'flex',justifyContent:'center'}}>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Group 1</a>
+                        <a class="nav-link active" href="#">Biology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Group 2</a>
+                        <a class="nav-link" href="#">English Grammar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Group 3</a>
+                        <a class="nav-link" href="#">Geometry</a>
                     </li>
                     <li class="nav-item">
                         <Link to="/match"><FaPlus /></Link>
@@ -116,19 +118,20 @@ function appear(x){
                             <div class="add-todo-task-button"><FaPlus /></div>
                         </div>
                         <div class="todo-list">
-                            <TaskTodo />
+                            <TaskTodo title="Plant Cell" />
+                            <TaskTodo title="Cell Organelles" />
                         </div>
                     </div>
                     <div class="tasks-assigned" style={{width:'25vw',height:'30vh'}}>
                         <div class="label-tasks-heading"><h6>Assigned</h6></div>
                         <div class="assigned-list">
-                            <TaskAssigned title="hallo" deadline="25/09/2022"/>
+                            <TaskAssigned title="Animal cell" deadline="25/09/2022"/>
                         </div>
                     </div>
                     <div class="tasks-completed" style={{width:'25vw',height:'30vh'}}>
                         <div class="label-tasks-heading"><h6>Completed!</h6></div>
                         <div class="completed-list">
-                            <TaskCompleted title="yaya"/>
+                            <TaskCompleted title="Cells"/>
                         </div>
                     </div>
                 </div>

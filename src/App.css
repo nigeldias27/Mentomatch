@@ -215,7 +215,7 @@ body {
 }
 
 .signup-text {
-  color: black;
+  color: white;
   margin: 25px 0px 30px 0px;
   font-size: 24px;
   padding: 0px 10px 0px 10px;
@@ -286,7 +286,7 @@ body {
 .uses-mentee-left {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 55%;
   background: blue;
 }
 
@@ -299,7 +299,7 @@ body {
 }
 
 .uses-for-mentee-text-label > div {
-  margin: 0px 20px 0px 20px;
+  margin: 20% 20px 0px 20px;
   font-size: 64px;
   color: rgb(38, 38, 106);
 }
@@ -425,8 +425,9 @@ body {
   color: white;
   font-size: 16px;
   display: flex;
+  width: 100px;
   align-items: center;
-  overflow-x: hidden;
+  
 }
 
 .assigned-task {
@@ -632,3 +633,8 @@ body {
   box-shadow: 8px 8px 10px #888888;
 }
 
+.customnav_container{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}

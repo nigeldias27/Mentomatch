@@ -6,9 +6,9 @@ function MenteeSignUp(){
         navigate("/interests/"+document.getElementById('signupname').value+"/"+document.getElementById('signupdob').value+"/"+document.getElementById('signuppass').value+"/"+document.getElementById('signupemail').value);
     }
     return(
-        <div class="mentee-signup-box">
+        <div class="mentee-signup-box" >
             <div class="signup-text">SIGN UP</div>
-            <div class="create-account-text">Create a Mentomatch Account</div>
+
 
             <div class="input-group mb-3" id="signup-name">
                 <span class="input-group-text" id="basic-addon1">Name</span>

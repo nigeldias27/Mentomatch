@@ -1,10 +1,12 @@
 
 import React,{useState, useEffect} from "react"
 import { AiOutlineClose } from "react-icons/ai";
-import {useParams} from "react-router-dom";
+import {useParams,useNavigate} from "react-router-dom";
 import {db} from "../firebase.js";
+
 import {getDatabase, ref, set } from "firebase/database";
 function Interests(){
+    let navigate = useNavigate();
     let params = useParams();
     const [interests,setInterests]=useState([]);
     const [choice,setChoice]=useState([]);
@@ -30,8 +32,9 @@ function userinfo() {
         interests: JSON.stringify(choice),
         Mentor:document.getElementById('IamMentor').checked
       });
+      
 
-
+navigate('/signin');
 
 }
 
@@ -81,6 +84,9 @@ function userinfo() {
             
             })}
             </div>
+
+
+            
             <div class="interests" style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
                 <input type="radio" value="Mentor" id="IamMentor"></input><p style={{color:'white',marginBottom:'0px'}}>Mentor</p>
                 <input type="radio" value="Mentee" id="IamMentee"></input><p style={{color:'white',marginBottom:'0px'}}>Mentee</p>
