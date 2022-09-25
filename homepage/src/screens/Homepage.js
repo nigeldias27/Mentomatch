@@ -21,64 +21,53 @@ function Homepage(props) {
           <Login>Login</Login>
         </RectStack>
       </HomeRow>
-      <Mentomatch1Stack>
-        <Mentomatch1>mentomatch</Mentomatch1>
+      <MentMatchStack>
+        <MentMatch>ment match</MentMatch>
         <SignUp3>match with like-minded people</SignUp3>
-      </Mentomatch1Stack>
-      <Group4StackRow>
-        <Group4Stack>
-          <Group4>
-            <Link to="/Untitled">
-              <Button1>
-                <ButtonOverlay>
-                  <Button9>
-                    <ButtonOverlay onClick={() => props.history.goBack()}>
-                      <Link to="/Untitled1">
-                        <Button4>
-                          <ButtonOverlay>
-                            <Group2>
-                              <Mentee1>mentee</Mentee1>
-                            </Group2>
-                          </ButtonOverlay>
-                        </Button4>
-                      </Link>
+        <O10>o</O10>
+      </MentMatchStack>
+      <Button9StackStackRow>
+        <Button9StackStack>
+          <Button9Stack>
+            <Button9>
+              <ButtonOverlay onClick={() => props.history.goBack()}>
+                <Link to="/Untitled1">
+                  <Button4>
+                    <ButtonOverlay>
+                      <Group2>
+                        <Mentee1>mentee</Mentee1>
+                      </Group2>
                     </ButtonOverlay>
-                  </Button9>
-                </ButtonOverlay>
-              </Button1>
-            </Link>
-          </Group4>
+                  </Button4>
+                </Link>
+              </ButtonOverlay>
+            </Button9>
+            <Rect2></Rect2>
+          </Button9Stack>
           <SignUp1>receive guidance from expert mentors</SignUp1>
-        </Group4Stack>
+        </Button9StackStack>
         <SignUp>sign up</SignUp>
-        <Group6Column>
-          <Group6>
-            <Link to="/Untitled">
-              <Button2>
-                <ButtonOverlay>
-                  <LoremIpsumStack>
-                    <LoremIpsum></LoremIpsum>
-                    <Button7>
-                      <ButtonOverlay onClick={() => props.history.goBack()}>
-                        <Link to="/Untitled1">
-                          <Button8>
-                            <ButtonOverlay>
-                              <Group7>
-                                <Mentor>mentor</Mentor>
-                              </Group7>
-                            </ButtonOverlay>
-                          </Button8>
-                        </Link>
-                      </ButtonOverlay>
-                    </Button7>
-                  </LoremIpsumStack>
-                </ButtonOverlay>
-              </Button2>
-            </Link>
-          </Group6>
+        <LoremIpsumStackStack>
+          <LoremIpsumStack>
+            <LoremIpsum></LoremIpsum>
+            <Button7>
+              <ButtonOverlay onClick={() => props.history.goBack()}>
+                <Link to="/Untitled1">
+                  <Button8>
+                    <ButtonOverlay>
+                      <Group7>
+                        <Mentor>mentor</Mentor>
+                      </Group7>
+                    </ButtonOverlay>
+                  </Button8>
+                </Link>
+              </ButtonOverlay>
+            </Button7>
+            <Rect3></Rect3>
+          </LoremIpsumStack>
           <SignUp2>provide guidance to amateur mentees</SignUp2>
-        </Group6Column>
-      </Group4StackRow>
+        </LoremIpsumStackStack>
+      </Button9StackStackRow>
     </Image>
   );
 }
@@ -150,8 +139,8 @@ const Rect = styled.div`
 
 const Login = styled.span`
   font-family: Roboto;
-  top: 10px;
-  left: 29px;
+  top: 9px;
+  left: 31px;
   position: absolute;
   font-style: normal;
   font-weight: 700;
@@ -163,13 +152,13 @@ const Login = styled.span`
 
 const RectStack = styled.div`
   width: 163px;
-  height: 84px;
+  height: 83px;
   margin-left: 514px;
   position: relative;
 `;
 
 const HomeRow = styled.div`
-  height: 84px;
+  height: 83px;
   flex-direction: row;
   display: flex;
   margin-top: 112px;
@@ -177,7 +166,7 @@ const HomeRow = styled.div`
   margin-right: 136px;
 `;
 
-const Mentomatch1 = styled.span`
+const MentMatch = styled.span`
   font-family: Roboto;
   top: 0px;
   left: 0px;
@@ -199,44 +188,33 @@ const SignUp3 = styled.span`
   font-size: 30px;
 `;
 
-const Mentomatch1Stack = styled.div`
-  width: 749px;
+const O10 = styled.span`
+  font-family: Roboto;
+  top: 0px;
+  left: 317px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(18,225,185,1);
+  font-size: 132px;
+`;
+
+const MentMatchStack = styled.div`
+  width: 775px;
   height: 184px;
-  margin-top: 73px;
+  margin-top: 74px;
   margin-left: 309px;
   position: relative;
 `;
 
-const Group4 = styled.div`
-  top: 0px;
-  left: 1px;
-  width: 420px;
-  height: 151px;
+const Button9 = styled.div`
+  top: 25px;
+  left: 73px;
+  width: 288px;
+  height: 102px;
   position: absolute;
   flex-direction: column;
   display: flex;
-`;
-
-const Button1 = styled.div`
-  width: 420px;
-  height: 151px;
-  shadow-radius: 0px;
-  border-radius: 50px;
-  border-width: 5px;
-  border-color: rgba(123,203,248,1);
-  flex-direction: column;
-  display: flex;
-  border-style: solid;
-  box-shadow: 3px 3px 0px  0.01px rgba(0,0,0,1) ;
-`;
-
-const Button9 = styled.div`
-  width: 288px;
-  height: 102px;
-  flex-direction: column;
-  display: flex;
-  margin-top: 23px;
-  margin-left: 68px;
   border: none;
 `;
 
@@ -263,21 +241,40 @@ const Mentee1 = styled.span`
   font-size: 85px;
 `;
 
+const Rect2 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 421px;
+  height: 153px;
+  position: absolute;
+  border-width: 5px;
+  border-color: rgba(123,203,248,1);
+  border-radius: 50px;
+  border-style: solid;
+`;
+
+const Button9Stack = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 421px;
+  height: 153px;
+  position: absolute;
+`;
+
 const SignUp1 = styled.span`
   font-family: Oswald;
-  top: 149px;
-  left: 0px;
+  top: 151px;
+  left: 4px;
   position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: rgba(18,225,185,1);
+  color: rgba(255,255,255,1);
   font-size: 30px;
 `;
 
-const Group4Stack = styled.div`
-  width: 422px;
-  height: 194px;
-  margin-top: 2px;
+const Button9StackStack = styled.div`
+  width: 421px;
+  height: 196px;
   position: relative;
 `;
 
@@ -287,34 +284,14 @@ const SignUp = styled.span`
   font-weight: 700;
   color: rgba(252,250,250,1);
   font-size: 40px;
-  margin-left: 35px;
+  margin-left: 40px;
   margin-top: 52px;
-`;
-
-const Group6 = styled.div`
-  width: 420px;
-  height: 151px;
-  flex-direction: column;
-  display: flex;
-`;
-
-const Button2 = styled.div`
-  width: 420px;
-  height: 151px;
-  shadow-radius: 0px;
-  border-radius: 50px;
-  border-width: 5px;
-  border-color: rgba(123,203,248,1);
-  flex-direction: column;
-  display: flex;
-  border-style: solid;
-  box-shadow: 3px 3px 0px  0.01px rgba(0,0,0,1) ;
 `;
 
 const LoremIpsum = styled.span`
   font-family: Roboto;
-  top: 40px;
-  left: 185px;
+  top: 63px;
+  left: 248px;
   position: absolute;
   font-style: normal;
   font-weight: 400;
@@ -322,8 +299,8 @@ const LoremIpsum = styled.span`
 `;
 
 const Button7 = styled.div`
-  top: 0px;
-  left: 0px;
+  top: 23px;
+  left: 63px;
   width: 288px;
   height: 102px;
   position: absolute;
@@ -355,37 +332,52 @@ const Mentor = styled.span`
   font-size: 85px;
 `;
 
+const Rect3 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 421px;
+  height: 153px;
+  position: absolute;
+  border-width: 5px;
+  border-color: rgba(123,203,248,1);
+  border-radius: 50px;
+  border-style: solid;
+`;
+
 const LoremIpsumStack = styled.div`
-  width: 288px;
-  height: 102px;
-  margin-top: 25px;
-  margin-left: 66px;
-  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 421px;
+  height: 153px;
+  position: absolute;
 `;
 
 const SignUp2 = styled.span`
   font-family: Oswald;
+  top: 149px;
+  left: 6px;
+  position: absolute;
   font-style: normal;
   font-weight: 700;
-  color: rgba(18,225,185,1);
+  color: rgba(255,255,255,1);
   font-size: 30px;
-  margin-left: 3px;
 `;
 
-const Group6Column = styled.div`
+const LoremIpsumStackStack = styled.div`
   width: 421px;
-  flex-direction: column;
-  display: flex;
-  margin-left: 30px;
+  height: 194px;
+  margin-left: 33px;
+  margin-top: 2px;
+  position: relative;
 `;
 
-const Group4StackRow = styled.div`
+const Button9StackStackRow = styled.div`
   height: 196px;
   flex-direction: row;
   display: flex;
   margin-top: 98px;
-  margin-left: 158px;
-  margin-right: 196px;
+  margin-left: 154px;
+  margin-right: 193px;
 `;
 
 export default Homepage;

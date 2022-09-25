@@ -215,11 +215,11 @@
 }
 
 .tasktodoicon {
-  margin: 0px 0px 0px 175px;
+  margin: 0px 0px 0px 0px;
 }
 
 .tasktodotitle {
-  margin: 0px 0px 0px 10px;
+  margin: 0px 210px 0px 10px;
   color: white;
   font-size: 16px;
   display: flex;
@@ -256,7 +256,7 @@
   flex-direction: row;
   align-items: center;
   background: red;
-  width: 110px;
+  width: 120px;
   border-radius: 10px;
 }
 
@@ -292,11 +292,11 @@
 }
 
 .task-completed-icon {
-  margin: 0px 0px 0px 175px;  
+  margin: 0px 0px 0px 0px;  
 }
 
 .task-completed-title {
-  margin: 0px 0px 0px 10px;
+  margin: 0px 210px 0px 10px;
   color: white;
   font-size: 16px;
   display: flex;
