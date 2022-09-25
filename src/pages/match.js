@@ -4,11 +4,12 @@ import NavbarDashboard from "../components/navbardashboard";
 import { useEffect,useState } from "react";
 import { getDatabase, ref, child, get , set } from "firebase/database";
 import {db} from "../firebase.js";
+import { useNavigate } from "react-router-dom";
 function Match() {
     const [interests,setInterests]=useState([]);
     const [displaying,setDisplaying]=useState(false);
     const [selectedInterests,setSelectedInterests]=useState('');
-    
+    let navigate = useNavigate();
         
      
 function dropdownint(){
@@ -153,7 +154,7 @@ get(child(dbRef, `Groups/`)).then((snapshot) => {
           console.error(error);
         });
 
-
+navigate('/dashboard');
 
 }
 

@@ -87,6 +87,7 @@ body {
 
 .nav-left > div {
   margin: 20px 40px 20px 40px;
+  color: white;
 }
 
 .nav-right {
@@ -95,9 +96,14 @@ body {
 
 .login-button > button {
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid white;
+  color: white;
   padding: 10px 20px 10px 20px;
   background-color: transparent;
+}
+
+#signin-login-button{
+  width: 300px;
 }
 
 .landing-slide-top {
@@ -111,12 +117,17 @@ body {
 .mentomatch-text-fancy{
   display: flex;
   flex-direction: row;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 900;
+  color: white;
+}
+
+.mentomatch-tagline-text {
+  color: white;
 }
 
 .fancy-o{
-  color: rgb(0, 225, 255);
+  color: #12E1B9;
   padding: 0px 5px 0px 5px;
 }
 
@@ -135,7 +146,8 @@ body {
   align-items: center;
   height: 200px;
   width: 400px;
-  border: 3px solid black;
+  color: white;
+  border: 3px solid white;
   background-color: transparent;
   border-radius: 10px;
 }
@@ -151,9 +163,10 @@ body {
   align-items: center;
   height: 200px;
   width: 400px;
+  color: white;
   transition: 0.4s;
   background-color: transparent;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 10px;
 }
 
@@ -171,7 +184,8 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
-  background: black;
+  border: 5px solid rgb(0, 0, 255);
+  background: rgb(0, 0, 105);
 }
 
 .signin-text {
@@ -205,18 +219,19 @@ body {
   display: flex;
   position: absolute;
   width: 400px;
-
+  height: 450px;
   left: 34%;
   top: 10%;
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
-  background: black;
+  border: 5px solid rgb(0, 123, 255);
+  background: rgb(0, 0, 105);
 }
 
 .signup-text {
   color: white;
-  margin: 25px 0px 30px 0px;
+  margin: 60px 0px 30px 0px;
   font-size: 24px;
   padding: 0px 10px 0px 10px;
   font-weight: 700;
@@ -272,21 +287,20 @@ body {
   font-weight: 700;
 }
 
-.highlight {
+.highlight {  
   color: rgb(0, 220, 147);
   padding: 0px 5px 0px 5px;
 }
 
 .uses-for-mentee {
   display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
+  flex-direction: row;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 }
 
 .uses-mentee-left {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 50%;
   background: blue;
 }
 
@@ -299,7 +313,7 @@ body {
 }
 
 .uses-for-mentee-text-label > div {
-  margin: 20% 20px 0px 20px;
+  margin: 25% 20px 0px 20px;
   font-size: 64px;
   color: rgb(38, 38, 106);
 }
@@ -411,9 +425,8 @@ body {
   width: 290px;
   height: 35px;
   margin: 0px 0px 3px 6px;
-  background: rgb(0, 0, 255);
+  background: rgba(2,0,36,1);
   border-radius: 5px;
-  border: 3px solid rgb(77, 77, 193);
 }
 
 .tasktodoicon {
@@ -425,22 +438,19 @@ body {
   color: white;
   font-size: 16px;
   display: flex;
-  width: 100px;
   align-items: center;
-  
+  overflow-x: hidden;
 }
 
 .assigned-task {
   display: flex;
   flex-direction: row;
-  
   align-items: center;
   width: 290px;
   height: 55px;
   margin: 0px 0px 3px 6px;
-  background: rgb(0, 255, 0);
+  background: rgba(9,9,121,1);
   border-radius: 5px;
-  border: 3px solid rgb(202, 255, 145);
 }
 
 .assigned-task-left {
@@ -453,13 +463,14 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin: 0px 0px 0px 0px;
+  color: white;
 }
 
 .assigned-deadline {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: red;
+  background: rgba(2,0,36,1);
   width: 120px;
   border-radius: 10px;
 }
@@ -490,9 +501,8 @@ body {
   width: 290px;
   height: 35px;
   margin: 0px 0px 3px 6px;
-  background: rgb(255, 0, 0);
+  background: rgba(0,212,255,1);
   border-radius: 5px;
-  border: 3px solid rgb(255, 112, 112);
 }
 
 .task-completed-icon {
@@ -612,29 +622,21 @@ body {
   margin: 15px 0px 0px 20px;
   border-radius: 10px;
   background: white;
-
 }
 
-
-
-.outermatch{
-  height: 90vh;
-  width: 100vh;
-}
-
-.innermatch{
-  position: relative;
-  top: 10%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: 8px 8px 10px #888888;
+.video-howto-slide{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .customnav_container{
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
+display: flex;
+flex-direction: row;
+width: 100vw;
+padding: 12px 12px 0px 0px;
+justify-items: space-between;
 }

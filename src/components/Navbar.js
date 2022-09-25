@@ -1,7 +1,8 @@
 import React,{useState} from "react"
 import Nav from "react-bootstrap/Nav"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Navbar() {
+    let navigate = useNavigate();
 const [opened,setopened]=useState(false);
 function clicked(){
     if(opened){
@@ -20,7 +21,9 @@ return(<div>
                 <div class="nav-contact"><a>contact</a></div>
             </div>
             <div class="nav-right">
-                <div class="login-button"><button>login</button></div>
+                <div class="login-button"><button onClick={()=>{
+                    navigate('/signin');
+                }}>login</button></div>
             </div>
         </div>
 

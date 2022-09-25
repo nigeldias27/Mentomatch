@@ -19,7 +19,10 @@ function Dashboard(){
     const [articleslist,setarticleslist]=useState([]);
     
 useEffect(()=>{
-    setImageslist(['Animal Kingdom','Plant Kingdom','Microorganisms']);
+    setImageslist([{a:'Plant Kingdom Chart',b:'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmybiologyresources.com%2Fwp-content%2Fuploads%2F2020%2F04%2FPlant-Classification-.jpg&imgrefurl=https%3A%2F%2Fmybiologyresources.com%2Fcie-resource-bank%2Fcharacteristics-and-classification%2Fclassification%2F1-3-features-of-organisms%2Fthe-5-kingdoms%2Fthe-plant-kingdom%2F&tbnid=Cw1XyYWo0lYKOM&vet=12ahUKEwiolNyIvK_6AhVJFbcAHQjVBEkQMygWegUIARCbAg..i&docid=mjhce0BRQ0vEWM&w=523&h=482&q=plant%20kingdom%20&hl=en-GB&ved=2ahUKEwiolNyIvK_6AhVJFbcAHQjVBEkQMygWegUIARCbAg'},{a:'Animal Kingdom Chart',b:"https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.edugraphics.net%2Flife-science%2Fposters%2FAnimal_Kingdom_Poster.jpg&imgrefurl=http%3A%2F%2Fwww.edugraphics.net%2Flife-science%2FAnimal_Kingdom_Poster.htm&tbnid=I5Sup7yEdStFnM&vet=12ahUKEwja3aDsu6_6AhXZhNgFHZySDRwQMygMegUIARCAAg..i&docid=-00-noP4f5o4sM&w=533&h=800&q=animal%20kingdom%20science&hl=en-GB&ved=2ahUKEwja3aDsu6_6AhXZhNgFHZySDRwQMygMegUIARCAAg"}]);
+    setvideoslist([{a:'Photosynthesis',b:"https://www.youtube.com/watch?v=4cWb7CkiwIY"},{a:'Penguins in Antartica',b:"https://youtu.be/k_s0stxDk9w"}]);
+    setarticleslist([{a:'Bryophytes',b:"https://phys.org/news/2022-09-three-dimensional-fossil-algae-million-years.html"},{a:'Mammals',b:"https://www.science.org/content/article/can-wolves-bond-people-dogs-do"}]);
+    
 })
 
 function appear(x){
@@ -36,6 +39,9 @@ function appear(x){
     
 }
 
+function c(v){
+    window.location.href = `${v}`
+}
 
     return(
         <div style={{backgroundImage:`url(${background})`}}>
@@ -56,7 +62,9 @@ function appear(x){
                         </div>
 
                         {features?<br></br>:videoslist.map((imagestitles)=>{
-                            return <div><a style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles}</a><br></br></div>
+                            return <div><a onClick={()=>{
+                               c(imagestitles.b);
+                            }} style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles.a}</a><br></br></div>
                         })}
                         <div onClick={()=>{appear('images')}} className="resourcesbuttons" style={{display:'flex',justifyContent:'space-between',marginLeft:'40px',marginTop:'10px',borderRadius:'15px',paddingTop:'10px',paddingBottom:'10px',backgroundColor:'blue'}}>
                         <div style={{display:'flex',flexDirection:'row'}}>
@@ -68,7 +76,7 @@ function appear(x){
                         </div>
                         </div>
                         {images?<br></br>:imageslist.map((imagestitles)=>{
-                            return <div><a style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles}</a><br></br></div>
+                            return <div><a onClick={()=>{c(imagestitles.b)}} style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles.a}</a><br></br></div>
                         })}
 
                         <div onClick={()=>{appear('articles')}} className="resourcesbuttons" style={{display:'flex',justifyContent:'space-between',marginLeft:'40px',marginTop:'10px',borderRadius:'15px',paddingTop:'10px',paddingBottom:'10px',backgroundColor:'blue'}}>
@@ -81,7 +89,9 @@ function appear(x){
                         </div>
                         </div>
                         {articles?<br></br>:articleslist.map((imagestitles)=>{
-                            return <div><a style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles}</a><br></br></div>
+                            return <div><a onClick={()=>{
+                                c(imagestitles.b)
+                            }} style={{marginLeft:'100px', paddingTop:'20px'}}>{imagestitles.a}</a><br></br></div>
                         })}
                 </div>
                 <div style={{width:'75vw',height:'100vh'}}>
@@ -102,7 +112,17 @@ function appear(x){
                     </li>
                     
                 </ul>
-                <div style={{overflowY:'scroll',height:'90vh'}}></div>
+                <div style={{overflowY:'scroll',height:'90vh'}}>
+                            <div  style={{display:'flex',marginLeft:'48px',marginTop:'48px',flexDirection:'row',width:'500px',paddingTop:'12px',paddingBottom:'12px',alignItems:'center',borderRadius:'20px',backgroundColor:'#B9F6CA'}}>
+                                <img style={{marginLeft:'5px',marginRight:'5px',borderRadius:'50px'}} src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" width={50} height={50} ></img>
+                                <div style={{display:'flex',flexDirection:'column'}}>
+                                    <p color="#546E7A">Nigel</p>
+                                    <p>Hi! I am the mentor for the group.Excited to start this journey with you</p>
+                                </div>
+                            </div>
+
+
+                </div>
                         <div style={{position:'absolute',bottom:'0px',left:'30vw'}}>
                             <button className="btn"><MdOutlineAddCircle size={35}/></button>
                             <input type="text" style={{width:"35vw"}}></input>
