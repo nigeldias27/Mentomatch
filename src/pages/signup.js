@@ -29,7 +29,7 @@ function MenteeSignUp(){
             </div>
            <button onClick={()=>{clicked()}} type="button" class="btn btn-outline-secondary" id="signin-next-button">Next</button>
 
-            <div class="already-account">Have an account? Sign In</div>
+            <div class="already-account"></div>
         </div>
     )
 }
