@@ -111,31 +111,19 @@ function appear(x){
                             <div class="add-todo-task-button"><FaPlus /></div>
                         </div>
                         <div class="todo-list">
-                            <TaskTodo/>
-                            <TaskTodo/>
-                            <TaskTodo/>
-                            <TaskTodo/>
-                            <TaskTodo/>
+                            <TaskTodo />
                         </div>
                     </div>
                     <div class="tasks-assigned" style={{width:'25vw',height:'30vh'}}>
                         <div class="label-tasks-heading"><h6>Assigned</h6></div>
                         <div class="assigned-list">
-                            <TaskAssigned />
-                            <TaskAssigned />
-                            <TaskAssigned />
-                            <TaskAssigned />
-                            <TaskAssigned />
+                            <TaskAssigned title="hallo" deadline="25/09/2022"/>
                         </div>
                     </div>
                     <div class="tasks-completed" style={{width:'25vw',height:'30vh'}}>
                         <div class="label-tasks-heading"><h6>Completed!</h6></div>
                         <div class="completed-list">
-                            <TaskCompleted />
-                            <TaskCompleted />
-                            <TaskCompleted />
-                            <TaskCompleted />
-                            <TaskCompleted />
+                            <TaskCompleted title="yaya"/>
                         </div>
                     </div>
                 </div>
